@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="_javascript/funcoes.js"></script>
+    <link rel="stylesheet" href="_css/specs.css">
+    <link rel="stylesheet" href="_css/estilo.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudo sobre Google Glass</title>
+</head>
+
+<body>
+    <div id="interface">
+        <header id="cabecalhoPrincipal">
+            <hgroup>
+                <h1> Google Glass </h1>
+                <h2> A revolução do Google está chegando </h2>
+            </hgroup>
+            <img id="icone" src="_imagens/especificacoes.png" alt="ôculos Glass">
+            <nav id="menuPrincipal">
+                <h1> Menu Principal </h1>
+                <ul>
+                    <li onmousemove="mudaIcone('./_imagens/home.png')" onmouseout="mudaIcone('./_imagens/especificacoes.png')">
+                        <a href="./index.html"> Home </a>
+                    </li>
+                    <li onmousemove="mudaIcone('./_imagens/especificacoes.png')" onmouseout="mudaIcone('./_imagens/especificacoes.png')">
+                        <a href="./specs.html"> Especificações </a>
+                    </li>
+                    <li onmousemove="mudaIcone('./_imagens/fotos.png')" onmouseout="mudaIcone('./_imagens/especificacoes.png')">
+                        <a href="./fotos.html"> Fotos </a>
+                    </li>
+                    <li onmousemove="mudaIcone('./_imagens/multimidia.png')" onmouseout="mudaIcone('./_imagens/especificacoes.png')">
+                        <a href="./multimidia.html"> Multimídia </a>
+                    </li>
+                    <li onmousemove="mudaIcone('./_imagens/contato.png')" onmouseout="mudaIcone('./_imagens/especificacoes.png')">
+                        <a href="./fale-conosco.html"> Fale conosco </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="corpo">
+            <article>
+                <header class="cabecalhoDaSection">
+                    <hgroup>
+                        <h3> Glass > Especificações </h3>
+                        <h1> Raio-X no Google Glass </h1>
+                        <h2> por Clayson Roberto Eufrasio </h2>
+                        <h3 class="direita"> Atualizado em 01/Maio/2013 </h3>
+                    </hgroup>
+                </header>
+                <p>
+                    Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto
+                    vermelho vai te levar a um lugar cheio de novas informações.
+                </p>
+                <section>
+                    <img src="./_imagens/glass-esquema-marcado.jpg" alt="Ôculos glass" usemap="#mapaGlass">
+                    <map name="mapaGlass">
+                        <area shape="poly" coords="184,220,264,208,266,243,155,286" href="./google-glass.html#tela" target="janela">
+                        <area shape="poly" coords="28,146,83,214,85,251,27,166" href="./google-glass.html#sensores" target="janela">
+                        <area shape="circle" coords="76,52,12" href="./google-glass.html#bateria" target="janela">
+                        <area shape="circle" coords="158,244,12" href="./google-glass.html#camera" target="janela">
+                    </map>
+                    <iframe scrolling="no" name="janela" src="./google-glass.html"></iframe>
+                </section>
+            </article>
+        </section>
+        <footer id="rodape">
+            <p>
+                Copyright &copy; 2022 - by Clayson Roberto Eufrasio <br>
+                <a href="https://www.instagram.com/" target="_blank"> Instagram </a> | <a
+                href="https://www.linkedin.com/in/clayson-roberto-eufrasio-2054b521a/" target="_blank"> Linkdin </a>
+            </p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
